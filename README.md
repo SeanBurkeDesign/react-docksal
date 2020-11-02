@@ -1,5 +1,12 @@
 # react-docksal
-Set up a new Docksal instance with React, Webpack and Babel
+
+### Stack
+ - React
+ - Webpack
+ - Babel
+ - Gulp
+ - SCSS
+ - Twig
 
 ### Dependencies
 - Docksal
@@ -9,19 +16,19 @@ Set up a new Docksal instance with React, Webpack and Babel
 1. Run `fin init` from project root directory
 
 ### Commands
-1. `fin exec npm run development` - runs webpack using the development config.
-2. `fin exex npm run build` - runs webpack using the production config.
-3. `fin exec npm` - for running npm commands
+1. `fin gulp` - default gulp task / builds in dev mode / loads browsersync.
+2. `fin gulp build` - build in prod mode
+3. `fin npm` - for running npm commands
+4. `fin npx` - for running npx commands
 
 ### Directory Structure
-- `app/` - The entry point for webpack. All work should be done here.
-- `build/` - The output directory for webpack. Deleted and rebuilt every time webpack is run. **DO NOT** work from this directory.
+- `src/` - The entry point for webpack. All work should be done here.
+- `dist/` - The output directory for webpack. Deleted and rebuilt every time webpack is run. **DO NOT** work from this directory.
 
 ## To-do
-- [ ] Add ESLint
-- [ ] Add Stylelint
-- [ ] Add SASS
-- [ ] Add Autoprefixer
-- [ ] Setup webpack development server
-- [ ] Enable module hot reloading
-- [ ] Configure webpack for handling static assets
+- [x] Add ESLint
+- [x] Add Stylelint
+- [x] Add SASS
+- [x] Add Autoprefixer
+- [x] Add Gulp
+- [x] Add Twig
